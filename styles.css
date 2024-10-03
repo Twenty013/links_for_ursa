@@ -1,0 +1,102 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0 10px; /* Внутрішній відступ для зручності на маленьких екранах */
+}
+
+table {
+    width: 100%; /* На мобільних пристроях таблиця займатиме всю ширину екрану */
+    max-width: 60%; /* Максимальна ширина для великих екранів */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: none;
+    color: #e0e0e0;
+    font-size: 1rem; /* Розмір шрифту для загальної адаптації */
+}
+
+th {
+    background-color: #272727;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td {
+    background-color: #2a2a2a;
+}
+
+tr:nth-child(even) td {
+    background-color: #333333;
+}
+
+tr:hover td {
+    background-color: #444444;
+    transition: background-color 0.3s ease;
+}
+
+caption {
+    caption-side: bottom;
+    color: #888888;
+    padding-top: 10px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Адаптивний розмір шрифту заголовка */
+}
+
+/* Адаптивні стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+    table {
+        width: 100%; /* Забезпечує, що таблиця займатиме всю ширину на планшетах */
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem; /* Зменшення розміру шрифту на планшетах */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Зменшення розміру заголовка на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        width: 100%; /* Забезпечує повну ширину таблиці на мобільних пристроях */
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.8rem; /* Ще більше зменшення розміру шрифту на мобільних пристроях */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Менший заголовок на маленьких екранах */
+    }
+}
