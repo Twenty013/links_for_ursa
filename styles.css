@@ -9,7 +9,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 1rem 3rem ;
-
 }
 
 table {
@@ -17,6 +16,7 @@ table {
     max-width: 60%; /* Максимальна ширина для великих екранів */
     border-collapse: collapse;
     margin-bottom: 20px;
+    margin: 1rem;
     background-color: #1f1f1f;
     border-radius: 15px;
     overflow: hidden;
